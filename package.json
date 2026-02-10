@@ -2,6 +2,7 @@
   "name": "watermelon-db",
   "main": "expo-router/entry",
   "version": "1.0.0",
+  "scheme": "template-scheme",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -11,11 +12,13 @@
     "lint": "expo lint"
   },
   "dependencies": {
+    "@nozbe/watermelondb": "^0.28.0",
     "@expo/vector-icons": "^15.0.3",
     "@react-navigation/bottom-tabs": "^7.4.0",
     "@react-navigation/elements": "^2.6.3",
     "@react-navigation/native": "^7.1.8",
     "expo": "~54.0.33",
+    "expo-build-properties": "~1.0.10",
     "expo-constants": "~18.0.13",
     "expo-font": "~14.0.11",
     "expo-haptics": "~15.0.8",
@@ -38,6 +41,7 @@
     "react-native-web": "~0.21.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.29.0",
     "@types/react": "~19.1.0",
     "typescript": "~5.9.2",
     "eslint": "^9.25.0",
